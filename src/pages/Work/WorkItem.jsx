@@ -1,5 +1,6 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const WorkItem = ({
   imgUrl,
@@ -13,7 +14,7 @@ const WorkItem = ({
     <div className={`work-item type-${type}`}>
       <div className={`work-item-img work-${containerHeight}`}>
         <div className={`work-item-img-wrapper`}>
-          <img src={imgUrl} alt="" />
+          <img src={imgUrl} alt={workName} />
         </div>
 
         <div className="work-item-info">
@@ -32,6 +33,15 @@ const WorkItem = ({
       </div>
     </div>
   );
+};
+
+WorkItem.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+  containerHeight: PropTypes.string.isRequired,
+  workName: PropTypes.string.isRequired,
+  workDate: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['blog', 'article']).isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default WorkItem;

@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./work.css";
 
 import { useRef } from "react";
@@ -7,14 +7,14 @@ import { useGSAP } from "@gsap/react";
 
 import WorkItem from "./WorkItem";
 import WorkImage1 from "../../assets/work/work-1.jpg";
-import WorkImage2 from "../../assets/work/work-2.jpg";
-import WorkImage3 from "../../assets/work/work-3.jpg";
+// import WorkImage2 from "../../assets/work/work-2.jpg";
+// import WorkImage3 from "../../assets/work/work-3.jpg";
 import WorkImage4 from "../../assets/work/work-4.jpg";
-import WorkImage5 from "../../assets/work/work-5.jpg";
-import WorkImage6 from "../../assets/work/work-6.jpg";
+// import WorkImage5 from "../../assets/work/work-5.jpg";
+// import WorkImage6 from "../../assets/work/work-6.jpg";
 import WorkImage7 from "../../assets/work/work-7.jpg";
 import WorkImage8 from "../../assets/work/work-8.jpg";
-import WorkImage9 from "../../assets/work/work-9.jpg";
+// import WorkImage9 from "../../assets/work/work-9.jpg";
 import WorkImage10 from "../../assets/work/work-10.jpg";
 import WorkImage11 from "../../assets/work/work-11.jpg";
 import WorkImage12 from "../../assets/work/work-12.jpg";
@@ -61,7 +61,7 @@ const Work = () => {
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage3}
+          imgUrl={WorkImage8}
           containerHeight="500"
           workName="Work Name"
           workDate="April 2024"
@@ -85,7 +85,7 @@ const Work = () => {
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage6}
+          imgUrl={WorkImage19}
           containerHeight="450"
           workName="Work Name"
           workDate="April 2024"
@@ -104,7 +104,7 @@ const Work = () => {
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage5}
+          imgUrl={WorkImage1}
           containerHeight="350"
           workName="Work Name"
           workDate="April 2024"
@@ -112,7 +112,7 @@ const Work = () => {
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage9}
+          imgUrl={WorkImage14}
           containerHeight="300"
           workName="Work Name"
           workDate="April 2024"
@@ -195,7 +195,7 @@ const Work = () => {
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage19}
+          imgUrl={WorkImage15}
           containerHeight="450"
           workName="Work Name"
           workDate="April 2024"

@@ -1,95 +1,92 @@
-import React from "react";
-import "./projects.css";
-import { Link } from "react-router-dom";
-import { useScramble } from "use-scramble";
 
-const useMultipleScrambles = (projects) => {
-  return projects.map((project) => {
-    const { ref: titleRef } = useScramble({
-      text: project.title,
-      speed: 1000,
-    });
-    const { ref: copyRef } = useScramble({
-      text: project.copy,
-      speed: 1000,
-    });
-    return { ...project, titleRef, copyRef };
-  });
+import "./projects.css";
+import PropTypes from 'prop-types';
+
+const ProjectItem = ({ title, copy, year, url }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
+  return (
+    <div className="project-item" onClick={handleClick} style={{ cursor: 'pointer' }}>
+      <div className="project-title">
+        <p>{title}</p>
+      </div>
+      <div className="project-copy">
+        <p>{copy}</p>
+      </div>
+      <div className="project-divider"></div>
+      <div className="project-year">
+        <p>{year}</p>
+      </div>
+    </div>
+  );
+};
+
+ProjectItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  copy: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 const Projects = () => {
   const projectData = [
     {
-      title: "Dynamic Web Artistry",
-      copy: "Crafting engaging visuals for web",
+      title: "StudioSize",
+      copy: "Cutting-edge, responsive web application with advanced UI/UX design",
       year: "2024",
+      url: "https://studiosize.com",
     },
     {
-      title: "Interactive Media Design",
-      copy: "Blending interactivity with user-centric design",
-      year: "2023",
-    },
-    {
-      title: "Mobile UX Innovations",
-      copy: "Enhancing mobile experience",
-      year: "2025",
-    },
-    {
-      title: "Cloud Solutions Architecture",
-      copy: "Building scalable and secure applications",
+      title: "LiveDocs",
+      copy: "Real-time collaborative document editing platform",
       year: "2024",
+      url: "https://livedocs-doc.vercel.app/sign-in",
     },
     {
-      title: "AI for Predictive Analysis",
-      copy: "Integrating AI to predict trends",
-      year: "2023",
+      title: "Ratan.Codes",
+      copy: "Portfolio made with love. and a bit of code.",
+      year: "2024",
+      url: "https://ratanzcodes.vercel.app/",
     },
     {
-      title: "Blockchain Development",
-      copy: "Developing secure blockchain systems for applications",
+      title: "Sundown",
+      copy: "A smooth ride..",
+      year: "2024",
+      url: "https://sundown.codes",
+    },
+    {
+      title: "Genesis",
+      copy: "Scrolling magic, crafted with love",
+      year: "2024",
+      url:"https://genesis-scroll.vercel.app/"
+    },
+    {
+      title: "Brainwave",
+      copy: "A simple, yet powerful, AI chatbot",
       year: "2025",
+      url: "https://brainwave-ebon-xi.vercel.app//"
     },
     {
-      title: "Advanced Data Analytics",
-      copy: "Utilizing big data to drive enterprise growth",
-      year: "2022",
-    },
-    {
-      title: "Virtual Reality Content Creation",
-      copy: "Creating immersive VR for education",
-      year: "2023",
-    },
-    {
-      title: "E-commerce Optimization",
+      title: "Dribble on Cribble",
       copy: "Enhancing online shopping through tailored e-com",
       year: "2024",
-    },
-    {
-      title: "Smart Technologies",
-      copy: "Integrating smart technology",
-      year: "2025",
+      url: "https://dribble-clone-frontend.vercel.app/"
     },
   ];
 
-  const scrambledProjects = useMultipleScrambles(projectData);
-
   return (
     <div className="container page-projects">
-      {scrambledProjects.map((project, index) => (
-        <Link to="/" key={index}>
-          <div className="project-item">
-            <div className="project-title">
-              <p ref={project.titleRef}>{project.title}</p>
-            </div>
-            <div className="project-copy">
-              <p ref={project.copyRef}>{project.copy}</p>
-            </div>
-            <div className="project-divider"></div>
-            <div className="project-year">
-              <p>{project.year}</p>
-            </div>
-          </div>
-        </Link>
+      {projectData.map((project, index) => (
+        <ProjectItem 
+          key={index}
+          title={project.title}
+          copy={project.copy}
+          year={project.year}
+          url={project.url}
+        />
       ))}
     </div>
   );
