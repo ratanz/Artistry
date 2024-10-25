@@ -11,6 +11,7 @@ import {
   FaGithub,
   FaEnvelope,
 } from "react-icons/fa";
+import PropTypes from 'prop-types';
 
 const DockItem = ({
   IconComponent,
@@ -41,6 +42,15 @@ const DockItem = ({
       )}
     </div>
   );
+};
+
+DockItem.propTypes = {
+  IconComponent: PropTypes.elementType.isRequired,
+  path: PropTypes.string.isRequired,
+  isHovered: PropTypes.bool.isRequired,
+  isNeighbor: PropTypes.bool.isRequired,
+  onMouseEnter: PropTypes.func.isRequired,
+  external: PropTypes.bool.isRequired,
 };
 
 // Dock component
@@ -89,6 +99,7 @@ const Dock = () => {
     setTimeout(() => {
       setHoveredIndex(-100);
     }, 50);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const icons = [
@@ -98,13 +109,13 @@ const Dock = () => {
     { icon: FaCamera, path: "/photos" },
     {
       icon: FaTwitter,
-      path: "https://twitter.com/codegridweb",
+      path: "https://x.com/ratanz_codes",
       external: true,
     },
-    { icon: FaGithub, path: "https://github.com/codegrid", external: true },
+    { icon: FaGithub, path: "https://github.com/ratanz", external: true },
     {
       icon: FaEnvelope,
-      path: "mailto:contact@codegridweb.com",
+      path: "mailto:contact@ratannnxd.com",
       external: true,
     },
   ];
