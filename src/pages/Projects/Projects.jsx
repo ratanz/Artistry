@@ -55,13 +55,13 @@ const Projects = () => {
       title: "Sundown",
       copy: "A smooth ride..",
       year: "2024",
-      url: "https://sundown.codes",
+      url: "https://studio-sundown.netlify.app/",
     },
     {
       title: "Genesis",
       copy: "Scrolling magic, crafted with love",
       year: "2024",
-      url:"https://genesis-scroll.vercel.app/"
+      url: "https://genesis-scroll.vercel.app/"
     },
     {
       title: "Brainwave",
@@ -75,12 +75,30 @@ const Projects = () => {
       year: "2024",
       url: "https://dribble-clone-frontend.vercel.app/"
     },
+    {
+      title: "Rejoice",
+      copy: "A ride to rejoice",
+      year: "2024",
+      url: "https://rejoicex.netlify.app"
+    },
+    {
+      title: "Ratanz Art",
+      copy: "A place to showcase my art in animation Xd",
+      year: "2024",
+      url: "https://ratanzart.netlify.app/"
+    },
+    {
+      title: "serenity-slides",
+      copy: "Slides to serenity",
+      year: "2024",
+      url: "https://serenity-slides.netlify.app/"
+    }
   ];
 
   return (
     <div className="container page-projects">
       {projectData.map((project, index) => (
-        <ProjectItem 
+        <ProjectItem
           key={index}
           title={project.title}
           copy={project.copy}
