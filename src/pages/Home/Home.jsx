@@ -3,8 +3,6 @@ import React from "react";
 import Spline from "@splinetool/react-spline";
 import "./home.css";
 
-import { FaSquareFull } from "react-icons/fa";
-
 import LiveClockUpdate from "../../components/LiveClockUpdate/LiveClockUpdate";
 
 const Home = () => {
@@ -27,7 +25,7 @@ const Home = () => {
       </div>
 
       <div className="home-logo">
-        <FaSquareFull size="16px" style={{ color: "#fff" }} />
+        <h4  className="text">R A T A N</h4>
       </div>
 
       <div className="live-clock">
