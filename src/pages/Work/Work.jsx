@@ -28,6 +28,11 @@ import WorkImage19 from "../../assets/work/work-19.jpg";
 import WorkImage20 from "../../assets/work/work-20.jpg";
 import WorkImage21 from "../../assets/work/work-21.jpg";
 import WorkImage22 from "../../assets/work/work-22.jpg";
+import Jet from "../../assets/work/jett.jpg";
+import Silver from "../../assets/work/Silver.jpeg";
+
+
+
 
 gsap.registerPlugin(useGSAP);
 
@@ -47,7 +52,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage18}
           containerHeight="300"
-          workName="Work Name"
+          workName="Darkly"
           workDate="April 2024"
           type="blog"
           url="/post"
@@ -55,7 +60,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage20}
           containerHeight="200"
-          workName="Work Name"
+          workName="Sidewalks"
           workDate="April 2024"
           type="img"
           url="/post"
@@ -63,7 +68,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage8}
           containerHeight="500"
-          workName="Work Name"
+          workName="Atlantic"
           workDate="April 2024"
           type="article"
           url="/post"
@@ -71,7 +76,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage4}
           containerHeight="350"
-          workName="Work Name"
+          workName="Green Smoke"
           workDate="April 2024"
           type="blog"
           url="/post"
@@ -79,7 +84,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage21}
           containerHeight="250"
-          workName="Work Name"
+          workName="Presense"
           workDate="April 2024"
           type="img"
           url="/post"
@@ -87,7 +92,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage19}
           containerHeight="450"
-          workName="Work Name"
+          workName="Dark Waves"
           workDate="April 2024"
           type="article"
           url="/post"
@@ -98,7 +103,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage10}
           containerHeight="200"
-          workName="Work Name"
+          workName="Lavender"
           workDate="April 2024"
           type="img"
           url="/post"
@@ -106,7 +111,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage1}
           containerHeight="350"
-          workName="Work Name"
+          workName="Nothing"
           workDate="April 2024"
           type="article"
           url="/post"
@@ -114,15 +119,15 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage14}
           containerHeight="300"
-          workName="Work Name"
+          workName="Cross Walk"
           workDate="April 2024"
           type="img"
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage10}
+          imgUrl={Jet}
           containerHeight="450"
-          workName="Work Name"
+          workName="Dark Fly"
           workDate="April 2024"
           type="article"
           url="/post"
@@ -130,15 +135,15 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage11}
           containerHeight="200"
-          workName="Work Name"
+          workName="PurplePlus"
           workDate="April 2024"
           type="blog"
           url="/post"
         />
         <WorkItem
-          imgUrl={WorkImage12}
+          imgUrl={Silver}
           containerHeight="450"
-          workName="Work Name"
+          workName="Sliver Surfer"
           workDate="April 2024"
           type="article"
           url="/post"
@@ -146,7 +151,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage13}
           containerHeight="200"
-          workName="Work Name"
+          workName="On White"
           workDate="April 2024"
           type="img"
           url="/post"
@@ -157,7 +162,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage7}
           containerHeight="250"
-          workName="Work Name"
+          workName="Hollow"
           workDate="April 2024"
           type="article"
           url="/post"
@@ -165,7 +170,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage22}
           containerHeight="350"
-          workName="Work Name"
+          workName="Natural"
           workDate="April 2024"
           type="img"
           url="/post"
@@ -173,7 +178,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage16}
           containerHeight="400"
-          workName="Work Name"
+          workName="SquareCube"
           workDate="April 2024"
           type="blog"
           url="/post"
@@ -181,7 +186,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage17}
           containerHeight="200"
-          workName="Work Name"
+          workName="Yellow"
           workDate="April 2024"
           type="img"
           url="/post"
@@ -189,7 +194,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage18}
           containerHeight="500"
-          workName="Work Name"
+          workName="Dna"
           workDate="April 2024"
           type="blog"
           url="/post"
@@ -197,7 +202,7 @@ const Work = () => {
         <WorkItem
           imgUrl={WorkImage15}
           containerHeight="450"
-          workName="Work Name"
+          workName="Wired"
           workDate="April 2024"
           type="img"
           url="/post"
