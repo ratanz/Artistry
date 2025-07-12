@@ -17,7 +17,7 @@ import WorkImage8 from "../../assets/work/work-8.jpg";
 // import WorkImage9 from "../../assets/work/work-9.jpg";
 import WorkImage10 from "../../assets/work/work-10.jpg";
 import WorkImage11 from "../../assets/work/work-11.jpg";
-import WorkImage12 from "../../assets/work/work-12.jpg";
+// import WorkImage12 from "../../assets/work/work-12.jpg";
 import WorkImage13 from "../../assets/work/work-13.jpg";
 import WorkImage14 from "../../assets/work/work-14.jpg";
 import WorkImage15 from "../../assets/work/work-15.jpg";
